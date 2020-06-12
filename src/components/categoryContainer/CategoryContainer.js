@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { CategoryItem } from '../categoryItem/CategoryItem';
+import CategoryItem from '../categoryItem/CategoryItem';
 import './CategoryContainer.scss';
 
 export class CategoryContainer extends Component {
@@ -12,18 +12,21 @@ export class CategoryContainer extends Component {
                     title: 'Hats',
                     subTitle: 'Shop Now',
                     imgUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+                    linkUrl: 'hats',
                 },
                 {
                     id: 2,
                     title: 'Jackets',
                     subTitle: 'Shop Now',
                     imgUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+                    linkUrl: '',
                 },
                 {
                     id: 3,
                     title: 'Shoes',
                     subTitle: 'Shop Now',
                     imgUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+                    linkUrl: '',
                 },
                 {
                     id: 4,
@@ -31,6 +34,7 @@ export class CategoryContainer extends Component {
                     subTitle: 'Shop Now',
                     imgUrl: 'https://i.ibb.co/R70vBrQ/men.png',
                     size: 'large',
+                    linkUrl: '',
                 },
                 {
                     id: 5,
@@ -38,6 +42,7 @@ export class CategoryContainer extends Component {
                     subTitle: 'Shop Now',
                     imgUrl: 'https://i.ibb.co/GCCdy8t/women.png',
                     size: 'large',
+                    linkUrl: '',
                 },
             ],
         };
@@ -46,14 +51,8 @@ export class CategoryContainer extends Component {
         const { menuCategories } = this.state;
         return (
             <div className='category-container'>
-                {menuCategories.map(({ title, subTitle, id, imgUrl, size }) => (
-                    <CategoryItem
-                        id={id}
-                        title={title}
-                        subTitle={subTitle}
-                        imgUrl={imgUrl}
-                        size={size}
-                    />
+                {menuCategories.map(({ id, ...menuCategoriesProps }) => (
+                    <CategoryItem key={id} {...menuCategoriesProps} />
                 ))}
             </div>
         );
