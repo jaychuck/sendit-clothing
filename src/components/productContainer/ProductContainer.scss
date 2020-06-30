@@ -1,0 +1,15 @@
+.productContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 40px;
+    margin: 30px 0;
+}

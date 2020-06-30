@@ -16,17 +16,17 @@ export class CategoryContainer extends Component {
                 },
                 {
                     id: 2,
-                    title: 'Jackets',
-                    subTitle: 'Shop Now',
-                    imgUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
-                    linkUrl: '',
-                },
-                {
-                    id: 3,
                     title: 'Shoes',
                     subTitle: 'Shop Now',
                     imgUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
-                    linkUrl: '',
+                    linkUrl: 'shoes',
+                },
+                {
+                    id: 3,
+                    title: 'Jackets',
+                    subTitle: 'Shop Now',
+                    imgUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+                    linkUrl: 'jackets',
                 },
                 {
                     id: 4,
@@ -34,7 +34,7 @@ export class CategoryContainer extends Component {
                     subTitle: 'Shop Now',
                     imgUrl: 'https://i.ibb.co/R70vBrQ/men.png',
                     size: 'large',
-                    linkUrl: '',
+                    linkUrl: 'men',
                 },
                 {
                     id: 5,
@@ -42,7 +42,7 @@ export class CategoryContainer extends Component {
                     subTitle: 'Shop Now',
                     imgUrl: 'https://i.ibb.co/GCCdy8t/women.png',
                     size: 'large',
-                    linkUrl: '',
+                    linkUrl: 'women',
                 },
             ],
         };

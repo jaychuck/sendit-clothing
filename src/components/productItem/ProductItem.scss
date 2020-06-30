@@ -1,0 +1,24 @@
+.productItem {
+    width: 22%;
+    height: 375px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.productImg {
+    width: 100%;
+    height: 95%;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 5px;
+}
+
+.productItemFooter {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
