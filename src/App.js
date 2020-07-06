@@ -5,11 +5,13 @@ import ShopPage from './pages/shopPage/ShopPage';
 import HatsPage from './pages/hatsPage/HatsPage';
 import ShoesPage from './pages/shoesPage/ShoesPage';
 import JacketsPage from './pages/jacketsPage/JacketsPage';
+import Header from '../src/components/header/Header';
 import './App.scss';
 
 function App() {
     return (
         <div className='app'>
+            <Header />
             <Switch>
                 <Route exact path='/' component={HomePage} />
                 <Route exact path='/hats' component={HatsPage} />
