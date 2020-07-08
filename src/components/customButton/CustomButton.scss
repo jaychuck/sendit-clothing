@@ -1,0 +1,27 @@
+.customButton {
+    min-width: 135px;
+    width: auto;
+    line-height: 50px;
+    height: 50px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0 25px;
+    background: black;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    &:hover {
+        background: white;
+        border: 1px solid black;
+        color: black;
+    }
+    &.googleButton {
+        background-color: #4285f4;
+        border: 1px solid #4285f4;
+        color: white;
+        &:hover {
+            background-color: #357ae8;
+        }
+    }
+}
